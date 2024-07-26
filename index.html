@@ -4,71 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Real-Time Chat Web App</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/index.css">
+</head>
 <body>
     <main>
         <header>
             <div class="title">
-               <i class="ri-whatsapp-line"></i>
-                <h1>Chat App</h1> 
+                <i class="ri-whatsapp-line"></i>
+                <h1>Real-Time Chat Web App</h1>
             </div>
             <button type="button" onclick="show_hide()">
-            <i class="ri-menu-line"></i>
+                <i class="ri-menu-line"></i>
             </button>
         </header>
 
         <div class="container">
-           <div class="users-window">
-            <div class="users-head">
-              <h3>People</h3>
-              <h4 class="users-count">0</h4>
+            <div class="users-window">
+                <div class="users-head">
+                    <h3>People</h3>
+                    <h4 class="users-count">0</h4>
+                </div>
+
+                <div class="users-list">
+                </div>
             </div>
 
-            <div class="users-list">
-               <!-- <p>Jarvis</p>
-               <p>Ultron</p>
-               <p>Neha</p> -->
-            </div>
-            </div>
+            <div class="chat-window">
+                <div class="chats" style="overflow-y: auto; height: 400px;">
+                </div>
 
-           <div class="chat-window">
-             <div class="chats">
-                
-              <!-- <div class="message incoming">
-               <h5>Jarvis</h5>
-               <p>Hello Ultron</p>
-             </div> -->
-
-             <!-- <div class="message outgoing">
-                <h5>Veronica</h5>
-                <p>Welcome Jarvis</p>
-             </div> -->
-             </div>
-
-             <div class="user-input">
-                <input id="user-msg" type="text" placeholder="Type your message...">
-                <button type ="button" id="user-send">Send</button>
-             </div>
+                <div class="user-input">
+                    <input id="user-msg" type="text" placeholder="Type your message...">
+                    <button type="button" id="user-send">Send</button>
+                    <input type="file" id="file-upload" accept="image/*,application/pdf">
+                </div>
             </div>
         </div>
     </main>
+    
     <script>
-        var uwindow=document.querySelector(".users-window");
-        function show_hide(){
-             if(uwindow.style.display=="block"){
-                uwindow.style.display="none";
-             }
-             else{
-                uwindow.style.display="block";
-             }
+        // Toggle display of users window
+        var uwindow = document.querySelector(".users-window");
+        function show_hide() {
+            if (uwindow.style.display == "block") {
+                uwindow.style.display = "none";
+            } else {
+                uwindow.style.display = "block";
+            }
         }
-
-      
-       
     </script>
 
     <script src="/socket.io/socket.io.js"></script>

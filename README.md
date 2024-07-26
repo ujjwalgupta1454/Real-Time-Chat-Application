@@ -1,7 +1,7 @@
 # Real-Time Chat Application
 
 ## Overview
-This project implements a real-time chat application using client-server architecture with HTML, CSS, JS, Node.js, and Socket.io. It enables seamless instant messaging with features for exchanging text, images, emojis, and documents.
+This project implements a real-time chat application using client-server architecture with HTML, CSS, JS, Node.js, and Socket.io. It enables seamless instant messaging, including the exchange of text, images, emojis, and documents.
 
 ## Objective
 The objective of this project is to create an interactive platform that enhances user engagement through multimedia communication capabilities.
@@ -12,12 +12,12 @@ The objective of this project is to create an interactive platform that enhances
 - **Socket.io:** Library for real-time, bidirectional event-based communication.
 - **WebSocket:** Optimized for lowering average message delivery time and ensuring responsive user experience.
 
-## Contributing 🤝
-We welcome contributions to enhance the project and make it even more effective. If you have any suggestions, bug fixes, or new features to add, please submit a pull request. We appreciate your contributions!
+## Contributing 
+I welcome contributions to enhance the project and make it even more effective. If you have any suggestions, bug fixes, or new features to add, please submit a pull request. I appreciate your contributions!
 
-## Contact 📩
-For any questions or inquiries, feel free to reach out to us:
+## Contact
+For any questions or inquiries, feel free to reach out to me:
 - **Email:** ujjwalgupta1454@gmail.com
 - **LinkedIn:** [Ujjwal Gupta](https://www.linkedin.com/in/ujjwal-gupta24/)
 
-Thank you for visiting my project repository. 😇
+Thank you for visiting my project repository.
